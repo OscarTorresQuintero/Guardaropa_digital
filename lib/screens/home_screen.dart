@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/wardrobe_provider.dart';
 import '../widgets/garment_card.dart';
+import '../widgets/mini_player.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -18,6 +19,7 @@ class HomeScreen extends StatelessWidget {
           return GarmentCard(e);
         }).toList(),
       ),
+      bottomNavigationBar: MiniPlayer(),
     );
   }
 }
